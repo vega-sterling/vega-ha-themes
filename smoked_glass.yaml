@@ -1,0 +1,68 @@
+# Smoked Glass — frosted-glass theme for Home Assistant (frontend 20260930.5+)
+# Deploy: /config/themes/smoked_glass.yaml on denver.paulk.org (HA 2026.10.4)
+# Requires in configuration.yaml:
+#   frontend:
+#     themes: !include_dir_merge_named themes
+# Then: action frontend.reload_themes → frontend.set_theme (Vega does this remotely)
+# Native glass: ha-card-background + ha-card-backdrop-filter (no HACS needed);
+# badges/chips inherit the same ha-card-* variables.
+Smoked Glass:
+  modes:
+    dark:
+      primary-color: "#8ab4f8"
+      rgb-primary-color: "138, 180, 248"
+      primary-text-color: "#e6e9ee"
+      secondary-text-color: "#9aa3b2"
+      text-primary-color: "#ffffff"
+      disabled-text-color: "#6b7280"
+      rgb-primary-text-color: "230, 233, 238"
+      primary-background-color: "#0e1116"
+      secondary-background-color: "#161a21"
+      clear-background-color: "#0e1116"
+      card-background-color: "rgba(25, 29, 36, 0.88)"
+      rgb-card-background-color: "28, 33, 42"
+      divider-color: "rgba(255, 255, 255, 0.08)"
+      outline-color: "rgba(255, 255, 255, 0.10)"
+      ha-card-background: "rgba(28, 33, 42, 0.55)"
+      ha-card-backdrop-filter: "blur(18px) saturate(1.5)"
+      ha-card-border-color: "rgba(255, 255, 255, 0.10)"
+      ha-card-border-width: "1px"
+      ha-card-border-radius: "18px"
+      ha-card-box-shadow: "0 8px 24px rgba(0, 0, 0, 0.35)"
+      app-header-background-color: "rgba(14, 17, 22, 0.72)"
+      app-header-text-color: "#e6e9ee"
+      app-header-border-bottom: "1px solid rgba(255, 255, 255, 0.08)"
+      sidebar-background-color: "rgba(16, 19, 24, 0.88)"
+      sidebar-selected-icon-color: "#8ab4f8"
+      sidebar-selected-text-color: "#8ab4f8"
+      chip-background-color: "rgba(255, 255, 255, 0.08)"
+      scrollbar-thumb-color: "rgba(255, 255, 255, 0.22)"
+    light:
+      primary-color: "#4a7bb5"
+      rgb-primary-color: "74, 123, 181"
+      primary-text-color: "#1c2430"
+      secondary-text-color: "#5b6675"
+      text-primary-color: "#ffffff"
+      disabled-text-color: "#9aa3ae"
+      rgb-primary-text-color: "28, 36, 48"
+      primary-background-color: "#e9edf2"
+      secondary-background-color: "#dde3ea"
+      clear-background-color: "#e9edf2"
+      card-background-color: "rgba(255, 255, 255, 0.85)"
+      rgb-card-background-color: "255, 255, 255"
+      divider-color: "rgba(20, 30, 45, 0.10)"
+      outline-color: "rgba(20, 30, 45, 0.14)"
+      ha-card-background: "rgba(255, 255, 255, 0.60)"
+      ha-card-backdrop-filter: "blur(18px) saturate(1.4)"
+      ha-card-border-color: "rgba(255, 255, 255, 0.65)"
+      ha-card-border-width: "1px"
+      ha-card-border-radius: "18px"
+      ha-card-box-shadow: "0 8px 24px rgba(31, 42, 60, 0.12)"
+      app-header-background-color: "rgba(233, 237, 242, 0.72)"
+      app-header-text-color: "#1c2430"
+      app-header-border-bottom: "1px solid rgba(20, 30, 45, 0.08)"
+      sidebar-background-color: "rgba(226, 231, 238, 0.90)"
+      sidebar-selected-icon-color: "#4a7bb5"
+      sidebar-selected-text-color: "#4a7bb5"
+      chip-background-color: "rgba(255, 255, 255, 0.55)"
+      scrollbar-thumb-color: "rgba(20, 30, 45, 0.25)"
